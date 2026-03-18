@@ -117,44 +117,72 @@
 
 #1. Declare your age as integer variable
 
-age = int(input ("Age: ")) 
-print ("Minha Idade: " , age)
-print (type (age))
+# age = int(input ("Age: ")) 
+# print ("Minha Idade: " , age)
+# print (type (age))
 
 #2. Declare your height as a float variable
 
-altura = float (input ("Altura:  "))
-print ("Minha altura é: ", altura)
-print (type (altura))
+# altura = float (input ("Altura:  "))
+# print ("Minha altura é: ", altura)
+# print (type (altura))
 
 #3.Declare a variable that store a complex number 
 
-complex_number = complex (input ("Número complexo: "))
-print ("Número complexo: ", complex_number)
-print (type (complex_number))
+# complex_number = complex (input ("Número complexo: "))
+# print ("Número complexo: ", complex_number)
+# print (type (complex_number))
 
-#4. Escreva um script que solicite que o usuário insira a base e a altura do triângulo e calcule uma área deste triângulo
+# #4. Escreva um script que solicite que o usuário insira a base e a altura do triângulo e calcule uma área deste triângulo
 
-base = input ("Informe o valor da base de um triângulo: ", base)
-altura = input ("Informe o valor da sua altura: ", altura)
-area_tri = base * altura / 2
-print ("Área: ", area_tri "m²")
+# base = int (input ("Informe o valor da base de um triângulo: "))
+# altura = int (input ("Informe o valor da sua altura: "))
+# area_tri = base * altura / 2
+# print ("Área: ", area_tri ,"m²")
 
-#5. Escreva um script que solicite ao usuário informar os lados a, b e c de um triângulo. Calcule o seu perímetro.
+# #5. Escreva um script que solicite ao usuário informar os lados a, b e c de um triângulo. Calcule o seu perímetro.
 
-lado_a = input ("Informe o lado a de um triângulo: ", lado_a)
-lado_b = input ("Informe o lado b de um triângulo: ", lado_b)
-lado_c = input ("Informe o lado c de um triângulo: ", lado_c)
-print ("O perímetro do triângulo é: ", lado_a + lado_b + lado_c)
+# lado_a = int (input ("Informe o lado a de um triângulo: "))
+# lado_b = int (input ("Informe o lado b de um triângulo: "))
+# lado_c = int (input ("Informe o lado c de um triângulo: "))
+# print ("O perímetro do triângulo é: ", lado_a + lado_b + lado_c)
 
-#6. Solicite a largura e comprimento de um retângulo através do prompt> Calcule a área e o perímetro do retângulo
+# #6. Solicite a largura e comprimento de um retângulo através do prompt> Calcule a área e o perímetro do retângulo
 
-comp = input ("Informe o comprimento de um retângulo: ", comp)
-altura = input ("Informe a altura do retângulo: ", altura)
-area_ret = comp * altura
-perim_ret = (altura + comp) * 2
-print ("O perímetro do retângulo é: ", perim_ret)
-print ("A Área do retângulo é: " , area_ret)
+# comp = int (input ("Informe o comprimento de um retângulo: "))
+# altura = int (input ("Informe a altura do retângulo: "))
+# area_ret = comp * altura
+# perim_ret = (altura + comp) * 2
+# print ("O perímetro do retângulo é: ", perim_ret)
+# print ("A Área do retângulo é: " , area_ret)
 
+# #7. Dado o raio de um círculo. Calcular a área e a circunferência.
 
+# raio = int (input ("Informe o raio de um círculo: " ))
+# area_circ = 3.14 * raio ** 2
+# perim_circ = 2 * 3.14 * raio
+# print ("A Área do Círculo é: ", area_circ)
+# print ("A circunferência é: ", perim_circ)
 
+#8. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+# slope = 2
+# x_intercept = 2/2
+# y_intercept = -2
+
+# print ("Dado a equação da reta y = 2x - 2 calcule:")
+# print ("Inclinação da reta:", slope)
+# print ("Interceptação da reta no eixo X: ", x_intercept)
+# print ("Interceptação da reta no eixo y: ", y_intercept)
+
+#9.Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
+# Distância Euclidiana = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+
+x1 = 2
+x2 = 6
+y1 = 2
+y2 = 10
+m = (y2 - y1) /(x2 - x1)
+dist_euc = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+dist_euc = round (dist_euc, 2)
+print ("Slope: ", m)
+print ("Distância Euclidiana entre os pontos: ", dist_euc)
