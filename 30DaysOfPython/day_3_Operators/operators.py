@@ -1,48 +1,160 @@
-# Declaring the variable at the top first
+# # Arithmetic Operations in Python
+# # Integers
 
-a = 3
-b = 2
+# print('Addition: ', 1 + 2)        # 3
+# print('Subtraction: ', 2 - 1)     # 1
+# print('Multiplication: ', 2 * 3)  # 6
+# print ('Division: ', 4 / 2)       # 2.0  Division in Python gives floating number
+# print('Division: ', 6 / 2)        # 3.0         
+# print('Division: ', 7 / 2)        # 3.5
+# print('Division without the remainder: ', 7 // 2)   # 3,  gives without the floating number or without the remaining
+# print ('Division without the remainder: ',7 // 3)   # 2
+# print('Modulus: ', 3 % 2)         # 1, Gives the remainder
+# print('Exponentiation: ', 2 ** 3) # 8 it means 2 * 2 * 2
 
-#Aritimetc operations and assigning the result to a veriable
+# # Floating numbers
+# print('Floating Point Number, PI', 3.14)
+# print('Floating Point Number, gravity', 9.81)
 
-total = a + b
-diff = a - b
-product = a * b
-division = a / b
-remainder = a % b
-floor_division = a // b
-exponential = a ** b
+# # Complex numbers
+# print('Complex number: ', 1 + 1j)
+# print('Multiplying complex numbers: ',(1 + 1j) * (1 - 1j))
 
-print ("a + b = ", total)
-print (" a - b = ", diff)
-print ("a * b = " , product)
-print ("a / b = ", division)
-print ("a % b = ", remainder)
-print ("a // b = ", floor_division)
-print ("a ** b = ", exponential)
+# # Declaring the variable at the top first
 
-print('== Addition, Subtraction, Multiplication, Division, Modulus ==')
+# a = 3 # a is a variable name and 3 is an integer data type
+# b = 2 # b is a variable name and 3 is an integer data type
 
-# Declaring values and organizing them together
-num_one = 3
-num_two = 4
+# # Arithmetic operations and assigning the result to a variable
+# total = a + b
+# diff = a - b
+# product = a * b
+# division = a / b
+# remainder = a % b
+# floor_division = a // b
+# exponential = a ** b
 
-# Arithmetic operations
+# # I should have used sum instead of total but sum is a built-in function - try to avoid overriding built-in functions
+# print(total) # if you do not label your print with some string, you never know where the result is coming from
+# print('a + b = ', total)
+# print('a - b = ', diff)
+# print('a * b = ', product)
+# print('a / b = ', division)
+# print('a % b = ', remainder)
+# print('a // b = ', floor_division)
+# print('a ** b = ', exponential)
 
-total = num_one + num_two 
-diff = num_two - num_one
-product = num_one * num_two
-division = num_two / num_one
-remainder = num_two % num_one
+# #Let us start connecting the dots and start making use of what we already know to calculate (area, volume,density, weight, perimeter, distance, force).
 
-print ("Soma" , total)
-print ("Subtração , " , diff)
-print ("Multiplicação , ", product)
-print ("Divisão ," , division)
-print ("Resto da Divisão , ", remainder)
+# #Calculando a área de um círculo: Raio: 10
 
-#Calculando a área de um círculo
+# radius = 10
+# circle_area = 3.14 * radius ** 2
+# print ('Área do Círculo: ', circle_area)
 
-raio = 10
-circle_area = 3.14 * raio**2
-print ("Área do Círculo = ", circle_area)
+# #Cálculo de Área de um Retângulo - Dados: Comprimento 20 Largura 10
+
+# comprimento = 20
+# largura = 10
+# area_retangulo = comprimento * largura
+# print ('Área do Retângulo: ', area_retangulo)
+
+# #Cálculo do Peso de um Objeto - Dados Massa: 75 
+
+# massa = 75
+# gravidade = 9.81
+# peso = massa * gravidade
+# print ('peso: ', peso, 'N')
+
+# #Cálculo de Densidade de um Líquido
+
+# massa = 75 #em Kg
+# volume = 0.075 #em m³
+# densidade = massa / volume # Kg/m³
+# print (densidade, 'kg/m³')
+
+##Comparison Operators
+
+# print (3 > 2)
+# print (3 >= 2)
+# print (3 <= 2)
+# print (3 == 2)
+# print (3 != 2)
+# print (len ('mango') == len ('avocato'))
+# print (len ('mango') != len ('avocato'))
+# print (len ('mango') < len ('avocato'))
+# print (len ('milk') != len ('meat'))
+# print (len ('milk') == len ('meat'))
+# print (len ('tomato') == len ('potato'))
+# print (len ('python') > len ('dragon'))
+
+# print ("True == True", True == True)
+# print ("True == False", True == False)
+# print ("False == False", False == False)
+
+# print ("1 is 1", 1 is 1)
+# print ("1 is not 1", 1 is not 1)
+# print ("A in Alvaro", "A" in "Alvaro")
+# print ("B not in alvaro", "B" not in "Alvaro")
+# print ("A in an", "A" in "an")
+# print ('4 is 2²', 4 is 2**2)
+
+# print(3 > 2 and 4 > 3) # True - because both statements are true
+# print(3 > 2 and 4 < 3) # False - because the second statement is false
+# print(3 < 2 and 4 < 3) # False - because both statements are false
+# print('True and True: ', True and True)
+# print(3 > 2 or 4 > 3)  # True - because both statements are true
+# print(3 > 2 or 4 < 3)  # True - because one of the statements is true
+# print(3 < 2 or 4 < 3)  # False - because both statements are false
+# print('True or False:', True or False)
+# print(not 3 > 2)     # False - because 3 > 2 is true, then not True gives False
+# print(not True)      # False - Negation, the not operator turns true to false
+# print(not False)     # True
+# print(not not True)  # True
+# print(not not False) # False
+
+#Exercises - Day 3
+
+#1. Declare your age as integer variable
+
+age = int(input ("Age: ")) 
+print ("Minha Idade: " , age)
+print (type (age))
+
+#2. Declare your height as a float variable
+
+altura = float (input ("Altura:  "))
+print ("Minha altura é: ", altura)
+print (type (altura))
+
+#3.Declare a variable that store a complex number 
+
+complex_number = complex (input ("Número complexo: "))
+print ("Número complexo: ", complex_number)
+print (type (complex_number))
+
+#4. Escreva um script que solicite que o usuário insira a base e a altura do triângulo e calcule uma área deste triângulo
+
+base = input ("Informe o valor da base de um triângulo: ", base)
+altura = input ("Informe o valor da sua altura: ", altura)
+area_tri = base * altura / 2
+print ("Área: ", area_tri "m²")
+
+#5. Escreva um script que solicite ao usuário informar os lados a, b e c de um triângulo. Calcule o seu perímetro.
+
+lado_a = input ("Informe o lado a de um triângulo: ", lado_a)
+lado_b = input ("Informe o lado b de um triângulo: ", lado_b)
+lado_c = input ("Informe o lado c de um triângulo: ", lado_c)
+print ("O perímetro do triângulo é: ", lado_a + lado_b + lado_c)
+
+#6. Solicite a largura e comprimento de um retângulo através do prompt> Calcule a área e o perímetro do retângulo
+
+comp = input ("Informe o comprimento de um retângulo: ", comp)
+altura = input ("Informe a altura do retângulo: ", altura)
+area_ret = comp * altura
+perim_ret = (altura + comp) * 2
+print ("O perímetro do retângulo é: ", perim_ret)
+print ("A Área do retângulo é: " , area_ret)
+
+
+
